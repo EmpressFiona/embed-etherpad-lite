@@ -10,7 +10,7 @@ class Onebox::Engine::EtherpadLiteOnebox
   include Onebox::Engine::HTML
 
   always_https
-  matches_regexp(/^http?:\/\/empress\.ml/)
+  matches_regexp(/https:\/\/lilith.empress.ml\/[^\/]+$)
 
   def to_html
     "<div>#{raw}</div>"
